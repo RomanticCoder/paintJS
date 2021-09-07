@@ -85,11 +85,11 @@ function stopDrawing(event){
     const x = event.offsetX;
     const y = event.offsetY;
     if(rectangle === true){
-        ctx.strokeRect(beginX, beginY, x-beginX, y-beginY);
+        ctx.fillRect(beginX, beginY, x-beginX, y-beginY);
     }else if(circle === true){
         console.log(x -beginX);
         ctx.arc((x+beginX)/2, (y+beginY)/2, Math.abs(x - beginX) /2, 0, 2 * Math.PI);
-        ctx.stroke();
+        ctx.fill();
 
         //ctx.arc(200 , 200, 100, 0, 2 * Math.PI, false);
     }

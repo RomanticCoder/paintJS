@@ -46,11 +46,9 @@ button {
 }
 
 #jsSaveBtn {
-  position: absolute;
+  margin-left: 50px;
   color: white;
   background-color: #307ab0;
-  top: 490px;
-  left: 730px;
   border-radius: 5px;
 }
 #jsSaveBtn:active {
